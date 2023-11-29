@@ -1,0 +1,189 @@
+# Import the necessary libraries
+import pandas as pd
+
+
+
+# Define a data structure for mushroom information
+class Mushroom:
+    def __init__(self,name, description, habitat, seasons, is_poisonous):
+        self.name = name
+        self.description = description
+        self.habitat = habitat
+        self.seasons = seasons
+        self.is_poisonous = is_poisonous
+
+# Create a list of mushrooms with relevant information
+mushrooms = [
+    Mushroom(
+        name="almond_mushroom",
+        description="n/a",
+        habitat="n/a",
+        seasons=["Spring", "Summer", "Fall"],
+        is_poisonous="n/a"
+    ),
+    Mushroom(
+        name="Mushroom2",
+        description="Description of Mushroom2.",
+        habitat="Habitat2",
+        seasons=["Spring", "Summer"],
+        is_poisonous=True
+        ,
+   
+
+    # Add more mushrooms with their information
+]mushrooms_kentucky = [
+    {
+        'Name': 'Amanita muscaria',
+        'Description': 'Red-capped mushroom with white spots',
+        'Habitat': 'Coniferous forests',
+        'Growing_Seasons': ['Summer', 'Fall'],
+        'Is_Poisonous': True
+    },
+    {
+        'Name': 'Agaricus bisporus',
+        'Description': 'Common edible mushroom',
+        'Habitat': 'Grasslands',
+        'Growing_Seasons': ['Spring', 'Fall'],
+        'Is_Poisonous': False
+    },
+    {
+        'Name': 'Boletus edulis',
+        'Description': 'Edible mushroom with a brown cap',
+        'Habitat': 'Deciduous forests',
+        'Growing_Seasons': ['Summer', 'Fall'],
+        'Is_Poisonous': False
+    },
+    {
+        'Name': 'Cantharellus cibarius',
+        'Description': 'Chanterelle with a golden color',
+        'Habitat': 'Woodlands',
+        'Growing_Seasons': ['Summer'],
+        'Is_Poisonous': False
+    },
+    {
+        'Name': 'Trametes versicolor',
+        'Description': 'Colorful turkey tail mushroom',
+        'Habitat': 'Dead trees and logs',
+        'Growing_Seasons': ['All year'],
+        'Is_Poisonous': False
+    },
+    {
+        'Name': 'Ganoderma applanatum',
+        'Description': 'Artist’s conk with a white pore surface',
+        'Habitat': 'Decaying hardwoods',
+        'Growing_Seasons': ['All year'],
+        'Is_Poisonous': False
+    },
+    {
+        'Name': 'Hypholoma fasciculare',
+        'Description': 'Sulfur tuft with a yellow cap',
+        'Habitat': 'Wooded areas',
+        'Growing_Seasons': ['Late summer', 'Fall'],
+        'Is_Poisonous': True
+    },
+    {
+        'Name': 'Amanita bisporigera',
+        'Description': 'Destroying angel with a pure white cap',
+        'Habitat': 'Woodlands',
+        'Growing_Seasons': ['Late summer', 'Fall'],
+        'Is_Poisonous': True
+    },
+    {
+        'Name': 'Coprinopsis atramentaria',
+        'Description': 'Inky cap with a bell-shaped cap',
+        'Habitat': 'Grassy areas',
+        'Growing_Seasons': ['Spring', 'Fall'],
+        'Is_Poisonous': True
+    },
+    {
+        'Name': 'Lentinula edodes',
+        'Description': 'Shiitake mushroom with a brown cap',
+        'Habitat': 'Cultivated on logs',
+        'Growing_Seasons': ['All year'],
+        'Is_Poisonous': False
+    }
+]
+
+# You can print the dictionary to inspect it
+print(mushrooms_kentucky)
+
+# Function to display information about a mushroom
+def display_mushroom_info(mushroom):
+    print(f"Name: {mushroom.name}")
+    print(f"Description: {mushroom.description}")
+    print(f"Habitat: {mushroom.habitat}")
+    print(f"Growing Seasons: {' '.join(mushroom.seasons)}")
+    print(f"Is Poisonous: {'Yes' if mushroom.is_poisonous else 'No'}")
+
+# Function to find mushrooms by season
+def find_mushrooms_by_season(season):
+    matching_mushrooms = [mushroom for mushroom in mushrooms if season in mushroom.seasons]
+    return matching_mushrooms
+
+# Main program
+if __name__ == "__main__":
+    # Sample code to display information about a specific mushroom
+    # Example: display_mushroom_info(mushrooms[0])
+    
+    # Sample code to find mushrooms that grow in a specific season
+    # Example: spring_mushrooms = find_mushrooms_by_season("Spring")
+    # for mushroom in spring_mushrooms:
+    #     display_mushroom_info(mushroom)
+    
+    # You can add more functionality to this program, like searching by name or habitat, etc.
+
+    
+    "bash"
+        
+    "pip install python"
+    "pip install matplotlib seaborn"
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+# Assuming you have a DataFrame with your mushroom data
+# You should load your data into a DataFrame
+
+# Example DataFrame:
+data = {
+    'Name': ['Mushroom1', 'Mushroom2', 'Mushroom3', 'Mushroom4'],
+    'Season': ['Spring', 'Summer', 'Fall', 'Spring'],
+    'Location': ['Forest', 'Field', 'Forest', 'Field'],
+    'IsPoisonous': [False, True, False, True]
+}
+
+df = pd.DataFrame(data)
+
+# Bar graph for times of harvest
+season_counts = df['Season'].value_counts()
+plt.figure(figsize=(8, 6))
+pd.barplot(x=season_counts.index, y=season_counts.values)
+plt.title('Mushroom Harvest Times')
+plt.xlabel('Season')
+plt.ylabel('Count')
+plt.show()
+
+# Pie chart for locations
+location_counts = df['Location'].value_counts()
+plt.figure(figsize=(8, 8))
+plt.pie(location_counts, labels=location_counts.index, autopct='%1.1f%%')
+plt.title('Mushroom Locations')
+plt.show()
+
+# Bar graph for poisonings
+poison_counts = df['IsPoisonous'].value_counts()
+plt.figure(figsize=(6, 6))
+pd.barplot(x=poison_counts.index, y=poison_counts.values)
+plt.title('Poisonous vs. Edible Mushrooms')
+plt.xlabel('Is Poisonous')
+plt.ylabel('Count')
+plt.show()
+
+# Check for any connections between variables (requires numeric data)
+# You might want to add more numerical data for this part
+correlation_matrix = df.corr()
+plt.figure(figsize=(8, 6))
+pd.heatmap(correlation_matrix, annot=True, cmap='coolwarm', linewidths=0.5)
+plt.title('Correlation Matrix')
+plt.show()
