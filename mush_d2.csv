@@ -14,7 +14,6 @@ mushrooms_data = {
 # Create a DataFrame
 mushrooms_df = pd.DataFrame(mushrooms_data)
 
-# Save to CSV
 mushrooms_df.to_csv('mushrooms_north_america.csv', index=False)
 
 # Sample data
