@@ -10,10 +10,7 @@ mushrooms_data = {
     'Growing_Seasons': [['Summer', 'Fall'], ['Spring', 'Fall'], ['Summer', 'Fall'], ['Summer']],
     'Is_Poisonous': [True, False, False, False]
 }
-
-# Create a DataFrame
 mushrooms_df = pd.DataFrame(mushrooms_data)
-
 mushrooms_df.to_csv('mushrooms_north_america.csv', index=False)
 
 data = {
