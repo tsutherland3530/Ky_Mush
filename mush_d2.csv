@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-# Sample data for illustration
+# 
 mushrooms_data = {
     'Name': ['Amanita muscaria', 'Agaricus bisporus', 'Boletus edulis', 'Cantharellus cibarius'],
     'Description': ['Red-capped mushroom with white spots', 'Common edible mushroom', 'Edible mushroom with a brown cap', 'Chanterelle with a golden color'],
