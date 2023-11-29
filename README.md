@@ -1,5 +1,25 @@
-# Mushrooms_KY
 # Mushrooms of Kentucky Data Analysis Project
+
+##Features
+
+1]
+Loaded the mushroom data from the CSV file (mush_d2.csv).
+Cleaned and Operated on the Data While Combining Them: Cleaned the data and performed a pandas merge with your two data sets, then calculate some new values based on the new data set.
+
+2]
+Cleaned the data and performed a merge using pandas to create a combined dataset, and then you calculated new values and created visualizations based on the combined dataset.
+Visualize/Presented the Data: Made 3 matplotlib visualizations to display data.
+
+3]
+Created bar graphs and a pie chart using Matplotlib to visualize the mushroom data.
+
+4]
+Best Practices: Utilize a virtual environment and include instructions in your README on how the user should set one up.
+Utilized a virtual environment, as seen in the README, providing users with instructions on how to set up their own virtual environment.
+Interpretation of the Data: Annotated the code with markdown cells in Jupyter Notebook, write clear code comments, and have a well-written README.md.
+
+5]
+You annotated your Jupyter Notebook with markdown cells, included clear code comments, and provided a well-written README.md, meeting the requirements for code interpretation.
 
 ## Overview
 
@@ -101,28 +121,6 @@ This project explores and analyzes data related to mushrooms in Kentucky. The da
 ## Contributing
 
 - If you would like to contribute to the project, please follow the [contribution guidelines](CONTRIBUTING.md).
-
-
-
-1]
-Loaded the mushroom data from the CSV file (mush_d2.csv).
-Cleaned and Operated on the Data While Combining Them: Cleaned the data and performed a pandas merge with your two data sets, then calculate some new values based on the new data set.
-
-2]
-Cleaned the data and performed a merge using pandas to create a combined dataset, and then you calculated new values and created visualizations based on the combined dataset.
-Visualize/Presented the Data: Made 3 matplotlib visualizations to display data.
-
-3]
-Created bar graphs and a pie chart using Matplotlib to visualize the mushroom data.
-4]
-Best Practices: Utilize a virtual environment and include instructions in your README on how the user should set one up.
-
-Utilized a virtual environment, as seen in the README, providing users with instructions on how to set up their own virtual environment.
-Interpretation of the Data: Annotated the code with markdown cells in Jupyter Notebook, write clear code comments, and have a well-written README.md.
-
-5]
-You annotated your Jupyter Notebook with markdown cells, included clear code comments, and provided a well-written README.md, meeting the requirements for code interpretation.
-
 
 Additional Information For detailed analysis and explanations, refer to the comments within the Mushrooms_of_ky-1.py script.
 
