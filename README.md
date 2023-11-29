@@ -1,6 +1,6 @@
 # Mushrooms of Kentucky Data Analysis Project
 
-##Features
+Features
 
 1]
 Loaded the mushroom data from the CSV file (mush_d2.csv).
@@ -23,7 +23,7 @@ You annotated your Jupyter Notebook with markdown cells, included clear code com
 
 ## Overview
 
-This project explores and analyzes data related to mushrooms in Kentucky. The data includes information about various mushroom species found in the region.
+This project explores and analyzes data related to mushrooms in Kentucky. The data includes information about various mushroom species found in the region.  Have a table showing which mushrooms are poisonous or edible from a small sample of data.  Cleaned the data to show the mushrooms that grow in kentucky into as seperate file.  Then made a few visualizatons to help further understand the data.  Im using a windows system with vscode using the python terminal.  The version of python im using currently to write this program is python 3.11.5.
 
 ## Table of Contents
 
