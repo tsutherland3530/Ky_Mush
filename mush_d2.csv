@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-# 
+# Sample data for illustration
 mushrooms_data = {
     'Name': ['Amanita muscaria', 'Agaricus bisporus', 'Boletus edulis', 'Cantharellus cibarius'],
     'Description': ['Red-capped mushroom with white spots', 'Common edible mushroom', 'Edible mushroom with a brown cap', 'Chanterelle with a golden color'],
@@ -10,9 +10,14 @@ mushrooms_data = {
     'Growing_Seasons': [['Summer', 'Fall'], ['Spring', 'Fall'], ['Summer', 'Fall'], ['Summer']],
     'Is_Poisonous': [True, False, False, False]
 }
+
+# Create a DataFrame
 mushrooms_df = pd.DataFrame(mushrooms_data)
+
+# Save to CSV
 mushrooms_df.to_csv('mushrooms_north_america.csv', index=False)
 
+# Sample data
 data = {
     "Mushroom": ["Morels", "Chanterelles", "Boletes", "Honey mushrooms", "Shiitake"],
     "Grow_Season": ["Spring", "Summer-Fall", "Summer-Fall", "Summer-Fall", "Year-round"],
