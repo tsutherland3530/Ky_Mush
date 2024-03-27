@@ -7,7 +7,7 @@ This Python-based project aims to categorize and label different mushrooms found
 ## Prerequisites
 
 - Python 3.8 or newer installed.
-- Libraries: pandas, matplotlib, seaborn (Ensure these are listed in your `requirements.txt`).
+- Libraries: pandas, matplotlib, seaborn 
 
 ## Installation
 
