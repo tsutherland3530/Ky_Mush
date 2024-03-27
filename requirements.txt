@@ -1,16 +1,5 @@
-requirements.txt
-
-# Data analysis and manipulation
-pandas==1.3.3
-numpy==1.21.2
-
-# Data visualization
-matplotlib==3.4.3
-seaborn==0.11.2
-
-# Jupyter Notebook
-notebook==6.4.3
-
-# Miscellaneous
-ipykernel==6.4.1
-
+pandas>=1.3.3
+matplotlib>=3.4.3
+seaborn>=0.11.2
+PyPDF2>=1.26.0  # Or replace with pdfminer.six for more complex PDF parsing
+reportlab>=3.5.66  # For creating PDF reports
